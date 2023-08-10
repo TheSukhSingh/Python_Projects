@@ -1,15 +1,51 @@
 import random
 
-print('\tWord Guessing Game!\nEvery correct letter guessed will give you one extra chance!\nEvery wrong letter guessed will deduct one chance from you!\n\tAll The Best!')
-print('----------------------------------------------------')
-words = ['rainbow', 'computer', 'science', 'programming', 'python', 'mathematics', 'player', 'condition', 'reverse', 'water', 'board', 'geeks']
+words = ['rainbow', 'computer', 'science', 'programming',
+		'python', 'mathematics', 'player', 'condition',
+		'reverse', 'water', 'board', 'geeks']
 
 word = random.choice(words)
-length = len(word)
-tries = int(length / 2)
 
-print('The length of the word is:', length, 'words. So you will get', tries, 'tries!')
 
-char = None
-arr = [0] * length
+print("Guess the characters")
 
+guesses = ''
+
+turns = 12
+
+
+while turns > 0:
+
+	failed = 0
+
+	for char in word:
+
+		if char in guesses:
+			print(char, end=" ")
+
+		else:
+			print("_")
+
+			failed += 1
+
+	if failed == 0:
+		print("You Win")
+
+		print("The word is: ", word)
+		break
+
+	print()
+	guess = input("guess a character:")
+
+	guesses += guess
+
+	if guess not in word:
+
+		turns -= 1
+
+		print("Wrong")
+
+		print("You have", + turns, 'more guesses')
+
+		if turns == 0:
+			print("You Loose")

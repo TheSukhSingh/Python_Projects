@@ -31,6 +31,6 @@ while (tries != 0) and (guess != randomNumber):
             print('Guess is a bit low!')
 
 if guess == randomNumber:
-    print("\nCongratulations! You guessed it right!")
+    print("\nCongratulations! You guessed it right!\n")
 else:
-    print ("\nSorry you lost.")
+    print ("\nSorry you lost.\n")
