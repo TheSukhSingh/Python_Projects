@@ -144,4 +144,3 @@ while game == True:
 				print ("Wrong choice")
 		else:
 			print('Wrong Choice!')
-				
