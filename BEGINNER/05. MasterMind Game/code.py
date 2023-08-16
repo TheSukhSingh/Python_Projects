@@ -3,19 +3,22 @@ import time
 
 num = random.randrange(1000,10000)
 
-print('Welcome to the Mastermind game!\nThere is a number between 1000 and 10000, if you choose the number correctly within first five tries, you will be crowned as a mastermind!')
+print('Welcome to the Mastermind game!\nThere is a number between 1000 and 10000, if you choose the number correctly within first five tries, you will be crowned as a MASTERMIND!')
 print('Choosing number...')
 time.sleep(0.5)
 print('Number is chosen!')
 tries = 5
+i = 0
+print(num)
 while True:
     number = ['x', 'x', 'x', 'x']
     guess_number=int(input("Enter your guess: "))
     tries -= 1
+    i += 1
     unrealnr = guess_number
     realnr = num
-    if (guess_number == realnr):
-        print('Wow! You found the number in the first try!\n You are the MASTERMIND!')
+    if guess_number == realnr and i == 1:
+        print('Wow! You found the number in the first try!\nYou are the MASTERMIND!')
         exit(0)
     correct_count = 0
     index = 3
