@@ -37,4 +37,3 @@ while True:
     if tries == 0:
         print('Out of tries! You lose!\nThe real number was',num)
         exit(0)
-
