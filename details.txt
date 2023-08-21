@@ -1,0 +1,32 @@
+Beginner Projects:
+23
+
+Intermediate Projects:
+18
+
+Web Scraping:
+11
+
+Automate Boring stuff using python:
+16
+
+Tkinter Projects:
+35
+
+Turtle Projects:
+11
+
+OpenCV Projects:
+32
+
+Django Projects:
+14
+
+Python Text to Speech and Vice-Versa:
+14
+
+More Projects on Python:
+11
+
+Total: 185
+Done: 4
