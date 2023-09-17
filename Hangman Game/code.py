@@ -35,3 +35,4 @@ if chk > 0:
     print(f'You lost! The word was: {fruit}')
 else:
     print(f'You won! The word was {fruit}')
+
